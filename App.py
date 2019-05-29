@@ -8,7 +8,7 @@ from MainWidget import MainWidget
 
 class App(qtw.QMainWindow):
 
-    def __init__(self, parentApp):
+    def __init__(self, parentApp, data):
         super().__init__()
         self.title = 'OCVID OpenCV Integrated Development'
         self.left = 0
@@ -19,6 +19,7 @@ class App(qtw.QMainWindow):
         self.setGeometry(self.left, self.top, self.width, self.height)
         self.parent = parentApp
         self.setWindowIcon(QIcon('./opencv-logo.ico'))
+        self.data = data
 
         self.table_widget = MainWidget(self)
         self.setCentralWidget(self.table_widget)
@@ -31,8 +32,7 @@ class App(qtw.QMainWindow):
         fileMenu = mainMenu.addMenu('File')
         editMenu = mainMenu.addMenu('Edit')
         viewMenu = mainMenu.addMenu('View')
-        searchMenu = mainMenu.addMenu('Search')
-        toolsMenu = mainMenu.addMenu('Tools')
+        streamMenu = mainMenu.addMenu('Stream')
         helpMenu = mainMenu.addMenu('Help')
 
         for x in qtw.QStyleFactory.keys():

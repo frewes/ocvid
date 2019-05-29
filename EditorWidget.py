@@ -8,8 +8,9 @@ class EditorWidget(qtw.QWidget):
     def __init__(self, parent):
         super(qtw.QWidget, self).__init__(parent)
         self.horizontalGroupBox = qtw.QGroupBox("Editor")
-        self.buildEditor()
+        self.data = parent.data
 
+        self.buildEditor()
         windowLayout = qtw.QVBoxLayout()
         windowLayout.addWidget(self.horizontalGroupBox)
         self.setLayout(windowLayout)
@@ -19,9 +20,10 @@ class EditorWidget(qtw.QWidget):
         layout = qtw.QVBoxLayout(self)
 
         self.header = qtw.QLabel(self);
-        self.header.setText("import opencv as cv\n\ncv.openStream(0)\n")
+        self.header.setText(self.data.preamble)
         layout.addWidget(self.header)
         self.editor = qtw.QTextEdit(self)
+        self.editor.setText(self.data.code)
         layout.addWidget(self.editor)
         self.saveButton = qtw.QPushButton('Update!', self)
         layout.addWidget(self.saveButton)

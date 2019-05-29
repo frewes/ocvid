@@ -9,12 +9,13 @@ class MainWidget(qtw.QWidget):
 
     def __init__(self, parent):
         super(qtw.QWidget, self).__init__(parent)
+        self.parent = parent
+        self.data = parent.data
         self.setLayout(qtw.QHBoxLayout())
         self.editor = EditorWidget(self)
         self.layout().addWidget(self.editor)
         self.viewer = ViewerWidget(self)
         self.layout().addWidget(self.viewer)
-
 
     @pyqtSlot()
     def on_click(self):

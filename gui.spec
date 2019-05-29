@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['C:/Users/fredr/PycharmProjects/OpenCVide/gui.py'],
-             pathex=['C:\\Users\\fredr\\PycharmProjects\\OpenCVide'],
+a = Analysis(['gui.py'],
+             pathex=['C:\\Users\\fredr\\Dev\\PycharmProjects\\OpenCVide'],
              binaries=[],
              datas=[],
              hiddenimports=[],

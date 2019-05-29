@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/ViewerWidget.py" line="25" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e50a650-9e2a-4708-a5bc-16769d711e62" name="Default Changelist" comment="" />
+    <list default="true" id="0e50a650-9e2a-4708-a5bc-16769d711e62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DataObj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/AA.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/DDS.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OpenCVide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OpenCVide.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/EditorWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewerWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/ViewerWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.spec" beforeDir="false" afterPath="$PROJECT_DIR$/gui.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/media/opencv-logo.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/opencv-logo.png" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +31,7 @@
     <session id="-405008591">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -38,17 +58,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1380867889">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="PNG" value="2" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="2" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="3511" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="3511" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -56,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="11" column="27" selection-start-line="11" selection-end-line="12" />
+            <state relative-caret-position="238">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -68,11 +116,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EditorWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="29" selection-end-line="28" />
+            <state relative-caret-position="287">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1558763541117" expanded="true" signature="475:484" ph="..." />
+                <marker date="1559113176105" expanded="true" signature="507:516" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,8 +129,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ViewerWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="208">
+              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -91,12 +151,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App.py">
+        <entry file="file://$PROJECT_DIR$/DataObj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="361">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <marker date="1559114045624" expanded="true" signature="48:53" ph="..." />
+                <marker date="1559114045624" expanded="true" signature="297:527" ph="..." />
+                <marker date="1559114045624" expanded="true" signature="555:560" ph="..." />
+                <marker date="1559114045624" expanded="true" signature="692:815" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,33 +183,43 @@
       <find>QAc</find>
       <find>exitButton</find>
       <find>grid</find>
+      <find>data</find>
+      <find>input</find>
+      <find>output</find>
     </findStrings>
     <replaceStrings>
       <replace>exitAct</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gui.py" />
         <option value="$PROJECT_DIR$/dist/EditorWidget.py" />
+        <option value="$PROJECT_DIR$/App.py" />
         <option value="$PROJECT_DIR$/MainWidget.py" />
+        <option value="$PROJECT_DIR$/gui.py" />
         <option value="$PROJECT_DIR$/EditorWidget.py" />
         <option value="$PROJECT_DIR$/ViewerWidget.py" />
-        <option value="$PROJECT_DIR$/App.py" />
+        <option value="$PROJECT_DIR$/DataObj.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="-12" />
+    <option name="y" value="2" />
     <option name="width" value="1522" />
     <option name="height" value="1932" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,15 +227,19 @@
               <item name="OpenCVide" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenCVide" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OpenCVide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenCVide" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gui.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -174,7 +252,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fredr\Dev\PycharmProjects\OpenCVide\media" />
       <recent name="C:\Users\fredr\PycharmProjects\OpenCVide" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fredr\Dev\PycharmProjects\OpenCVide\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,7 +271,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pyinstaller">
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="DataObj" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OpenCVide" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataObj.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="OpenCVide" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,14 +316,14 @@
     </configuration>
     <configuration name="pyinstaller" type="PythonConfigurationType" factoryName="Python">
       <module name="OpenCVide" />
-      <option name="INTERPRETER_OPTIONS" value="-m PyInstaller" />
+      <option name="INTERPRETER_OPTIONS" value="-m PyInstaller -y -F" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\fredr\PycharmProjects\OpenCVide\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
@@ -235,10 +338,12 @@
     <list>
       <item itemvalue="Python.pyinstaller" />
       <item itemvalue="Python.gui" />
+      <item itemvalue="Python.DataObj" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.gui" />
+        <item itemvalue="Python.DataObj" />
       </list>
     </recent_temporary>
   </component>
@@ -247,19 +352,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14845361" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14827353" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.3295063" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34045076" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25622776" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32977462" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32858837" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24948454" />
@@ -269,53 +373,70 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/media/DDS.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/AA.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/MainWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="27" selection-start-line="11" selection-end-line="12" />
+        <state relative-caret-position="238">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EditorWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="29" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1558763541117" expanded="true" signature="475:484" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewerWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EditorWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1559113176105" expanded="true" signature="507:516" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="68">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewerWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataObj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1559114045624" expanded="true" signature="48:53" ph="..." />
+            <marker date="1559114045624" expanded="true" signature="297:527" ph="..." />
+            <marker date="1559114045624" expanded="true" signature="555:560" ph="..." />
+            <marker date="1559114045624" expanded="true" signature="692:815" ph="..." />
           </folding>
         </state>
       </provider>
