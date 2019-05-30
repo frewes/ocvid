@@ -4,10 +4,10 @@ import numpy as np
 
 class DataObj():
     def __init__(self):
-        print("Hi")
-        self.preamble = preambleImage('media/AA.png')
+        self.preamble = preambleImage('resources/AA.png')
         self.code = codeExampleBasic()
-        self.input = cv2.imread('media/AA.png',cv2.IMREAD_COLOR)
+        self.input = cv2.imread('resources/AA.png',cv2.IMREAD_COLOR)
+        print(self.input)
         self.runCode()
 
     def runCode(self):
@@ -15,7 +15,6 @@ class DataObj():
         print("Executing")
         print(self.preamble+"\n"+self.code)
         exec(self.preamble+"\n"+self.code, globals(), _locals)
-        print(_locals)
         self.output = _locals['output_rgb']
 
 def preambleImage(filename):
