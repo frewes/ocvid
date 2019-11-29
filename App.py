@@ -20,10 +20,11 @@ class App(qtw.QMainWindow):
         self.parent = parentApp
         self.setWindowIcon(QIcon('./opencv-logo.ico'))
         self.data = data
+        self.data.app = self
 
         self.table_widget = MainWidget(self)
         self.setCentralWidget(self.table_widget)
-        self.statusBar().showMessage('Message in statusbar.')
+        self.statusBar().showMessage('Loaded.')
         self.initMenu()
         self.show()
 
@@ -32,13 +33,14 @@ class App(qtw.QMainWindow):
         fileMenu = mainMenu.addMenu('File')
         editMenu = mainMenu.addMenu('Edit')
         viewMenu = mainMenu.addMenu('View')
-        streamMenu = mainMenu.addMenu('Stream')
-        helpMenu = mainMenu.addMenu('Help')
+        #streamMenu = mainMenu.addMenu('Stream')
+        #helpMenu = mainMenu.addMenu('Help')
 
         for x in qtw.QStyleFactory.keys():
             styleAct = qtw.QAction(QIcon(''), x, self)
             styleAct.setStatusTip('Set style to ' + x)
-            styleAct.triggered.connect(lambda checked, style=x: self.handleStyleChanged(qtw.QStyleFactory.create(style)))
+            styleAct.triggered.connect(lambda checked, style=x: self.handleStyleChanged(
+                qtw.QStyleFactory.create(style)))
             viewMenu.addAction(styleAct)
 
         saveAct = qtw.QAction(QIcon(''), "Save", self)
@@ -58,22 +60,32 @@ class App(qtw.QMainWindow):
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('Exit application')
         exitAct.triggered.connect(self.close)
-        fileMenu.addAction(saveAct);
-        fileMenu.addAction(saveAsAct);
-        fileMenu.addAction(loadAct);
+        fileMenu.addAction(saveAct)
+        fileMenu.addAction(saveAsAct)
+        fileMenu.addAction(loadAct)
         fileMenu.addAction(exitAct)
 
-    def handleStyleChanged(self, style):
-        self.parent.setStyle(style)
+        commentAct = qtw.QAction(QIcon(''), "Comment block", self)
+        commentAct.setStatusTip('Comment line')
+        commentAct.setShortcut('Ctrl+/')
+        commentAct.triggered.connect(self.handleComment)
+        editMenu.addAction(commentAct)
+
+    def setMessage(self, log):
+        print("Setting message", log)
+        self.statusBar().showMessage(log)
 
     def handleStyleChanged(self, style):
         self.parent.setStyle(style)
 
     def handleSave(self):
-        print("save")
+        print("TODO save")
 
     def handleSaveAs(self):
-        print("save as")
+        print("TODO save as")
 
     def handleLoad(self):
-        print("load")
+        print("TODO load")
+
+    def handleComment(self):
+        print("TODO comment")

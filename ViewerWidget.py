@@ -3,18 +3,29 @@ from PyQt5 import QtWidgets as qtw
 from PyQt5 import QtCore
 from PyQt5.QtGui import QIcon, QImage, QPixmap, QPainter
 
+
 class ViewerWidget(qtw.QWidget):
 
     def __init__(self, parent):
         super(qtw.QWidget, self).__init__(parent)
         self.horizontalGroupBox = qtw.QGroupBox("Result viewer")
         self.data = parent.data
+        self.data.viewer = self  # gross data incest but whatever
         self.buildView()
 
         windowLayout = qtw.QVBoxLayout()
         windowLayout.addWidget(self.horizontalGroupBox)
         self.setLayout(windowLayout)
+        self.data.updateViewer = self.updateView
 
+    def updateView(self):
+        print("Update view")
+        height, width, colors = self.data.output.shape
+        bytesPerLine = width*3
+        imageG = QImage(self.data.output.data, width, height,
+                        bytesPerLine, QImage.Format_RGB888)
+
+        self.outputView.setPixmap(QPixmap(imageG))
 
     def buildView(self):
         layout = qtw.QVBoxLayout()
@@ -23,7 +34,8 @@ class ViewerWidget(qtw.QWidget):
         layout.addWidget(label1)
         height, width, colors = self.data.input.shape
         bytesPerLine = 3 * width
-        image = QImage(self.data.input.data, width, height, bytesPerLine, QImage.Format_RGB888)
+        image = QImage(self.data.input.data, width, height,
+                       bytesPerLine, QImage.Format_RGB888)
 
         image = image.rgbSwapped()
         self.inputView = qtw.QLabel(self)
@@ -41,7 +53,8 @@ class ViewerWidget(qtw.QWidget):
         self.outputView.setScaledContents(True)
         height, width, colors = self.data.output.shape
         bytesPerLine = width*3
-        imageG = QImage(self.data.output.data, width, height, bytesPerLine, QImage.Format_RGB888)
+        imageG = QImage(self.data.output.data, width, height,
+                        bytesPerLine, QImage.Format_RGB888)
 
         self.outputView.setPixmap(QPixmap(imageG))
         layout.addWidget(self.outputView)

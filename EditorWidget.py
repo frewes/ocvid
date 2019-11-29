@@ -1,7 +1,7 @@
 import sys
+import PyQt5 as qt
 from PyQt5 import QtWidgets as qtw
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import pyqtSlot
+
 
 class EditorWidget(qtw.QWidget):
 
@@ -15,16 +15,20 @@ class EditorWidget(qtw.QWidget):
         windowLayout.addWidget(self.horizontalGroupBox)
         self.setLayout(windowLayout)
 
-
     def buildEditor(self):
         layout = qtw.QVBoxLayout(self)
 
-        self.header = qtw.QLabel(self);
+        self.header = qtw.QLabel(self)
         self.header.setText(self.data.preamble)
         layout.addWidget(self.header)
         self.editor = qtw.QTextEdit(self)
         self.editor.setText(self.data.code)
         layout.addWidget(self.editor)
         self.saveButton = qtw.QPushButton('Update!', self)
+        self.saveButton.clicked.connect(self.update)
         layout.addWidget(self.saveButton)
         self.horizontalGroupBox.setLayout(layout)
+
+    def update(self):
+        print("Update")
+        self.data.updateCode(self.editor.toPlainText())
