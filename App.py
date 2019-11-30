@@ -89,3 +89,7 @@ class App(qtw.QMainWindow):
 
     def handleComment(self):
         print("TODO comment")
+
+    def closeEvent(self, event):
+        self.data.stopVid()
+        event.accept()  # let the window close
