@@ -19,13 +19,20 @@ class ViewerWidget(qtw.QWidget):
         self.data.updateViewer = self.updateView
 
     def updateView(self):
-        print("Update view")
         height, width, colors = self.data.output.shape
         bytesPerLine = width*3
         imageG = QImage(self.data.output.data, width, height,
                         bytesPerLine, QImage.Format_RGB888)
-
         self.outputView.setPixmap(QPixmap(imageG))
+
+        height, width, colors = self.data.input.shape
+        bytesPerLine = 3 * width
+        image = QImage(self.data.input.data, width, height,
+                       bytesPerLine, QImage.Format_RGB888)
+
+        image = image.rgbSwapped()
+        pixmap = QPixmap(image)
+        self.inputView.setPixmap(pixmap)
 
     def buildView(self):
         layout = qtw.QVBoxLayout()
@@ -74,9 +81,26 @@ class ViewerWidget(qtw.QWidget):
         stopBtn = qtw.QPushButton("Stop", self)
         restartBtn = qtw.QPushButton("Restart", self)
 
+        playBtn.clicked.connect(self.play)
+        stepBtn.clicked.connect(self.step)
+        stopBtn.clicked.connect(self.stop)
+        restartBtn.clicked.connect(self.restart)
+
         self.buttonPanel.layout().addWidget(playBtn)
         self.buttonPanel.layout().addWidget(stepBtn)
         self.buttonPanel.layout().addWidget(stopBtn)
         self.buttonPanel.layout().addWidget(restartBtn)
 
-        self.buttonPanel.setDisabled(True)
+        # self.buttonPanel.setDisabled(True)
+
+    def play(self):
+        self.data.playVid()
+
+    def step(self):
+        self.data.stepVid()
+
+    def stop(self):
+        self.data.stopVid()
+
+    def restart(self):
+        self.data.restartVid()
