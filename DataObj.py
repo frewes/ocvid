@@ -76,8 +76,11 @@ class DataObj():
         self.runCode()
 
     def stopVid(self):
-        self.timer.cancel()
-        self.stoppedVid = True
+        try:
+            self.timer.cancel()
+            self.stoppedVid = True
+        except:
+            print("No timer")
 
     def restartVid(self):
         self.frame_no = 0
@@ -114,7 +117,9 @@ def codeExampleBasic():
     return """
 temp = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 output_rgb = cv2.cvtColor(temp, cv2.COLOR_GRAY2RGB)
-    """
+# Draw a circle!
+output_rgb = cv2.circle(output_rgb, (365,310),50,(255,255,0),8)
+"""
 
 
 if __name__ == "__main__":

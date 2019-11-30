@@ -1,6 +1,9 @@
 import sys
 import PyQt5 as qt
 from PyQt5 import QtWidgets as qtw
+from PyQt5 import Qsci
+
+import syntax
 
 
 class EditorWidget(qtw.QWidget):
@@ -21,7 +24,7 @@ class EditorWidget(qtw.QWidget):
         self.header = qtw.QLabel(self)
         self.header.setText(self.data.preamble)
         layout.addWidget(self.header)
-        self.editor = qtw.QTextEdit(self)
+        self.editor = PythonEditor(self)
         self.editor.setText(self.data.code)
         layout.addWidget(self.editor)
         self.saveButton = qtw.QPushButton('Update!', self)
@@ -31,4 +34,10 @@ class EditorWidget(qtw.QWidget):
 
     def update(self):
         print("Update")
-        self.data.updateCode(self.editor.toPlainText())
+        self.data.updateCode(self.editor.text())
+
+
+class PythonEditor(Qsci.QsciScintilla):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setLexer(Qsci.QsciLexerPython(self))
