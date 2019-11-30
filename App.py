@@ -69,6 +69,10 @@ class App(qtw.QMainWindow):
         commentAct.setStatusTip('Comment line')
         commentAct.setShortcut('Ctrl+/')
         commentAct.triggered.connect(self.handleComment)
+
+        importsAct = qtw.QAction(QIcon(''), "Edit imports", self)
+        importsAct.setStatusTip('Change which modules are imported')
+        importsAct.triggered.connect(self.editImports)
         editMenu.addAction(commentAct)
 
     def setMessage(self, log):
@@ -89,6 +93,9 @@ class App(qtw.QMainWindow):
 
     def handleComment(self):
         print("TODO comment")
+
+    def editImports(self):
+        print("TODO imports")
 
     def closeEvent(self, event):
         self.data.stopVid()

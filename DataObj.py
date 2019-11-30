@@ -10,6 +10,7 @@ class DataObj():
         self.frame_no = 0
         self.stoppedVid = False
         self.videoFile = 'resources/AA.mp4'
+        self.imports = defaultImports()
         self.preamble = preambleVideoDisplay(self.videoFile, self.frame_no)
         self.code = codeExampleBasic()
 
@@ -28,8 +29,9 @@ class DataObj():
         self.vidCap.set(cv2.CAP_PROP_POS_FRAMES, self.frame_no-1)
         res, self.input = self.vidCap.read()
         try:
-            exec(preambleVideoActual(self.videoFile, self.frame_no) +
-                 "\n"+self.code, globals(), _locals)
+            exec(self.imports + "\n" +
+                 preambleVideoActual(self.videoFile, self.frame_no) + "\n" +
+                 self.code, globals(), _locals)
             self.output = _locals['output_rgb']
         except BaseException as inst:
             print("Failed to run code:", inst)
@@ -105,7 +107,6 @@ while(True):
 
 def preambleVideoActual(filename, frame_no):
     return """
-import cv2
 cap = cv2.VideoCapture(\'{filename}\')
 frame_number = {frame_no}
 cap.set(cv2.CAP_PROP_POS_FRAMES, frame_number-1)
@@ -119,6 +120,12 @@ temp = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 output_rgb = cv2.cvtColor(temp, cv2.COLOR_GRAY2RGB)
 # Draw a circle!
 output_rgb = cv2.circle(output_rgb, (365,310),50,(255,255,0),8)
+"""
+
+
+def defaultImports():
+    return """
+import cv2
 """
 
 
