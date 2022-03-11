@@ -60,7 +60,7 @@ pexpect==4.6.0
 pgzero==1.2
 pickleshare==0.7.5
 pigpio==1.42
-Pillow==5.4.1
+Pillow==9.0.1
 prompt-toolkit==2.0.9
 protobuf==3.0.0
 ptyprocess==0.6.0
